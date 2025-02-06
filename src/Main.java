@@ -79,6 +79,7 @@ public class Main {
   }
 
 
+  // assume that each String is bounded by a constant length
   // The time complexity is:
   // YOUR ANSWER HERE
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
@@ -91,6 +92,7 @@ public class Main {
 
 
   // assume n = wordsA.length = wordsB.length
+  // assume that each String is bounded by a constant length
   // The time complexity is:
   // YOUR ANSWER HERE
   public static boolean containsOverlap(String[] wordsA, String[] wordsB) {
@@ -104,6 +106,7 @@ public class Main {
     return false;
   }
 
+  // assume that each String is bounded by a constant length
   // The time complexity is:
   // YOUR ANSWER HERE
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
@@ -134,6 +137,8 @@ public class Main {
   public static double computeAverage(double a, double b) {
     return (a + b) / 2.0;
   }
+
+  // assume that each String is bounded by a constant length
   // The time complexity is:
   // YOUR ANSWER HERE
   public static void checkIfContainedHashSet(HashSet<String> set, String target)
@@ -149,6 +154,7 @@ public class Main {
   // The name at index i of names corresponds to the email at index i of emails
   // A queryName is given, and this method returns the corresponding email if it is found
   // Otherwise, it returns "Person not found"
+  // assume that each String is bounded by a constant length
   // What is the time complexity of this method?
   // YOUR ANSWER HERE
   public static String emailLookup(String[] names, String[] emails, String queryName) {
@@ -164,6 +170,7 @@ public class Main {
   // However, instead of two arrays it is passed a map where the
   // keys are names and the values are emails.
   // Write this method to efficiently return the corresponding email or "Person not found" if appropriate
+  // assume that each String is bounded by a constant length
   // What is the time complexity of your solution?
   // YOUR ANSWER HERE
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
@@ -171,6 +178,7 @@ public class Main {
   }
 
   // What is the time complexity of this method?
+  // assume that each String is bounded by a constant length
   // (assume the set and list have the same number of elements)
   // YOUR ANSWER HERE
   public static boolean hasCommon(HashSet<String> wordSet, ArrayList<String> wordList) {
@@ -183,6 +191,7 @@ public class Main {
   }
   // Rewrite hasCommon so it does the same thing as hasCommon, but with a better time complexity.
   // Do not change the datatype of wordSet or wordList.
+  // assume that each String is bounded by a constant length
   // What is the time complexity of your new solution?
   // YOUR ANSWER HERE
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
