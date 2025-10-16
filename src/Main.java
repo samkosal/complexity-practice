@@ -5,8 +5,8 @@ import java.util.Set;
 
 public class Main {
 
-  // The time complexity is:
-  // YOUR ANSWER HERE
+  // The time complexity is: O(n^2) where n = x
+  // YOUR ANSWER HERE 
   public static void timesTable(int x) {
     for(int i = 1; i <= x; i++) {
         for(int j = 1; j <= x; j++) {
@@ -16,7 +16,7 @@ public class Main {
     }
   }
 
-  // The time complexity is:
+  // The time complexity is: O(n) where n = letters
   // YOUR ANSWER HERE
   public static void printLetters(String word) {
     char[] letters = word.toCharArray();
@@ -40,7 +40,7 @@ public class Main {
   }
 
 
-  // The time complexity is:
+  // The time complexity is: O(n) where n = nums
   // YOUR ANSWER HERE
   public static int computeProduct(int[] nums) {
     int total = 1;
@@ -50,7 +50,7 @@ public class Main {
     return total;
   }
 
-  // The time complexity is:
+  // The time complexity is: O(1)
   // YOUR ANSWER HERE
   public static void describeProduct(int[] nums) {
     System.out.println("About to compute the product of the array...");
@@ -59,7 +59,7 @@ public class Main {
   }
 
 
-  // The time complexity is:
+  // The time complexity is: O(n)
   // YOUR ANSWER HERE
   public static int computeFactorial(int n) {
     int result = 1;
