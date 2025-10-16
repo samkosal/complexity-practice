@@ -71,7 +71,7 @@ public class Main {
 
   // Assume that the largest number is no bigger than the length
   // of the array
-  // The time complexity is:
+  // The time complexity is: O(n) n = nums
   // YOUR ANSWER HERE
   public static void computeAllFactorials(int[] nums) {
     for(int num : nums) {
@@ -82,7 +82,7 @@ public class Main {
 
 
   // assume that each String is bounded by a constant length
-  // The time complexity is:
+  // The time complexity is: O(1)
   // YOUR ANSWER HERE
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
     if (arr.contains(target)) {
@@ -95,7 +95,7 @@ public class Main {
 
   // assume n = wordsA.length = wordsB.length
   // assume that each String is bounded by a constant length
-  // The time complexity is:
+  // The time complexity is: O(n^2) n = a*b
   // YOUR ANSWER HERE
   public static boolean containsOverlap(String[] wordsA, String[] wordsB) {
     for(String wordA : wordsA) {
@@ -109,7 +109,7 @@ public class Main {
   }
 
   // assume that each String is bounded by a constant length
-  // The time complexity is:
+  // The time complexity is: O(n) n = a+b
   // YOUR ANSWER HERE
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
     Set<String> wordsSet = new HashSet<>();
@@ -126,7 +126,7 @@ public class Main {
     return false;
   }
 
-  // The time complexity is:
+  // The time complexity is: O(n) n = chars.length
   // YOUR ANSWER HERE
   public static void printCharacters(char[] chars) {
     for (int i = 0; i < chars.length; i++) {
@@ -134,14 +134,14 @@ public class Main {
       System.out.println("The character at index " + i + " is " + character);
     }
   }
-  // The time complexity is:
+  // The time complexity is: O(1)
   // YOUR ANSWER HERE
   public static double computeAverage(double a, double b) {
     return (a + b) / 2.0;
   }
 
   // assume that each String is bounded by a constant length
-  // The time complexity is:
+  // The time complexity is: O(1) 
   // YOUR ANSWER HERE
   public static void checkIfContainedHashSet(HashSet<String> set, String target)
   {
