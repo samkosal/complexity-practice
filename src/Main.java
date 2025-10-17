@@ -158,7 +158,7 @@ public class Main {
   // Otherwise, it returns "Person not found"
   // assume that each String is bounded by a constant length
   // What is the time complexity of this method?
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: O(n) where n = the length of the names array
   public static String emailLookup(String[] names, String[] emails, String queryName) {
     for(int i = 0; i < names.length; i++) {
       if (names[i].equals(queryName)) {
@@ -174,9 +174,12 @@ public class Main {
   // Write this method to efficiently return the corresponding email or "Person not found" if appropriate
   // assume that each String is bounded by a constant length
   // What is the time complexity of your solution?
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE: O(1)
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
-    return null;
+    if (namesToEmails.containsKey(queryName)) { //Checks to see if namesToEmails contain queryName
+      return namesToEmails.get(queryName); //returns the value if theres a match
+    }
+    return "Person not found"; // return if there's no match found
   }
 
   // What is the time complexity of this method?
