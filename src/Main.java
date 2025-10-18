@@ -214,7 +214,11 @@ public class Main {
   // The prices will be updated frequently throughout the day, and you need to efficiently update
   // and access the current price for each stock. The order of the ticker symbols is not important.
   // What would be a good choice of data structure?
-  // YOUR ANSWER HERE
+  // YOUR ANSWER HERE:
+  // The best is a Hashmap, the key would store string, the value would store the price.
+  // Instead of looping through the list of items everytime we need to access the price. 
+  // With a hashmap we just need to access the item by key and directly get the price by value.
+  // This method Gives us the best time complexity: O(1)
 
   // Suppose you are building a music player application where users can create playlists.
   // Songs can be added to the end of the playlist in the order the user chooses, and the user can
@@ -222,6 +226,9 @@ public class Main {
   // their position in the playlist.
   // What would be a good choice of data structure?
   // YOUR ANSWER HERE
+  // A good data structure would be an arraylist. we can skip to the next or previous by using next/previous.
+  // we can access the songs by position by using index.
+  // the complexity would be : O(1)
 
   // Suppose you are developing a search feature that keeps track of the user's
   // recent search queries. You want to store the queries in the order they were made,
@@ -230,4 +237,7 @@ public class Main {
   // to optimize for fast lookups or deletions.
   // What would be a good choice of data structure?
   // YOUR ANSWER HERE
+  // A good data structure would be an arraylist. same as the song one, we can put these searches in order by recent.
+  // and if we need to delete or access the search, we can use List.pop() for delete, and search by index for lookup.
+  // the complexity would be: O(1)
 }
