@@ -200,6 +200,10 @@ public class Main {
   // What is the time complexity of your new solution?
   // YOUR ANSWER HERE
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
+    HashSet<String> wordListSet = new HashSet<>(wordList); //Convert the arrayList to a string
+    for (String word : wordListSet) {
+      if (wordListSet.contains)
+    }
     return false;
   }
 
